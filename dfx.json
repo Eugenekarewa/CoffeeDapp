@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "coffee_rockstars_backend": {
+      "main": "src/coffee_rockstars_backend/main.mo",
+      "type": "motoko"
+    },
+    "coffee_rockstars_frontend": {
+      "dependencies": [
+        "coffee_rockstars_backend"
+      ],
+      "source": [
+        "src/coffee_rockstars_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "coffee_rockstars_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
